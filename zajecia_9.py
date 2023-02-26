@@ -10,7 +10,7 @@ class  Rover:
         print(f"prędkość {self.velocity} km/h")
 
 class Sampler:
-    def __init__(self, sample_range=36):
+    def __init__(self, sample_range):
         self.sampler_range=sample_range
     def sampler_description(self):
         print(f"ten łazik posiada próbnik o zasięgu {self.sampler_range} cm")
@@ -18,7 +18,7 @@ class Sampler:
 class LunarRover(Rover):
     def __init__(self, weight, velocity):
         super(LunarRover, self).__init__(weight,velocity)
-        self.sampler =Sampler()
+        self.sampler =Sampler(20)
 
 
 
