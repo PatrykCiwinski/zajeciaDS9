@@ -10,7 +10,7 @@ with open(name) as fname:
 #     print(line.rstrip())
 
 
-lst =[row for row in lines]
+lst =[print(row.strip()) for row in lines]
 
-for l in lst:
-    print(l.strip())
+# for l in lst:
+#     print(l.strip())
